@@ -5,51 +5,26 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="shaheen.taha.bluetoothhomev2.MainActivity">
+    tools:context="shaheen.taha.bluetoothingmyroom.MainActivity">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:text="Energy Saver"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:text="Fan"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:text="Switch Board 2"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:text="Socket"/>
 
-
-    <Button
-        android:id="@+id/bulbButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#280680"
-        android:gravity="center"
-        android:text="BULB"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        />
-
-    <Button
-        android:id="@+id/fanButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textSize="40sp"
-        android:textColor="#FFFFFF"
-        android:text="FAN"
-        android:background="#005cb2"/>
-
-    <Button
-        android:id="@+id/switchBoardButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="SWITCH BOARD"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        android:background="#280680"/>
-
-    <Button
-        android:id="@+id/plugButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:textSize="40sp"
-        android:textColor="#FFFFFF"
-        android:text="PLUG"
-        android:background="#005cb2"/>
 </LinearLayout>
