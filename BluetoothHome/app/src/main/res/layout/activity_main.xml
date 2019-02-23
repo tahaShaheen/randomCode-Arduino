@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shaheen.taha.bluetoothhomev2.MainActivity">
+
+
+    <Button
+        android:id="@+id/bulbButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#280680"
+        android:gravity="center"
+        android:text="BULB"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        />
+
+    <Button
+        android:id="@+id/fanButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:text="FAN"
+        android:background="#005cb2"/>
+
+    <Button
+        android:id="@+id/switchBoardButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="SWITCH BOARD"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:background="#280680"/>
+
+    <Button
+        android:id="@+id/plugButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:text="PLUG"
+        android:background="#005cb2"/>
+</LinearLayout>
