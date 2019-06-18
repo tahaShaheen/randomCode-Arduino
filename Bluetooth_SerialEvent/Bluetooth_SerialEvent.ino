@@ -1,20 +1,14 @@
 /*
   Serial Event example
-
   When new serial data arrives, this sketch adds it to a String.
   When a newline is received, the loop prints the string and clears it.
-
   A good test for this is to try it with a GPS receiver that sends out
   NMEA 0183 sentences.
-
   NOTE: The serialEvent() feature is not available on the Leonardo, Micro, or
   other ATmega32U4 based boards.
-
   created 9 May 2011
   by Tom Igoe
-
   This example code is in the public domain.
-
   http://www.arduino.cc/en/Tutorial/SerialEvent
 */
 
@@ -24,6 +18,8 @@ String inputString2 = "";         // a String to hold incoming data
 boolean stringComplete = false;  // whether the string is complete
 boolean string1Complete = false;  // whether the string is complete
 boolean string2Complete = false;  // whether the string is complete
+//char endChar = '#';
+char endChar = '\n';
 
 void setup() {
   // initialize serial:
@@ -86,7 +82,7 @@ void serialEvent() {
     inputString += inChar;
     // if the incoming character is a newline, set a flag so the main loop can
     // do something about it:
-    if (inChar == '\n') {
+    if (inChar == endChar) {
       stringComplete = true;
     }
   }
@@ -99,7 +95,7 @@ void serialEvent1() {
     inputString1 += inChar;
     // if the incoming character is a newline, set a flag so the main loop can
     // do something about it:
-    if (inChar == '\n') {
+    if (inChar == endChar) {
       string1Complete = true;
     }
   }
@@ -112,7 +108,7 @@ void serialEvent2() {
     inputString2 += inChar;
     // if the incoming character is a newline, set a flag so the main loop can
     // do something about it:
-    if (inChar == '\n') {
+    if (inChar == endChar) {
       string2Complete = true;
     }
   }
